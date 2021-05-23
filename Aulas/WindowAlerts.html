@@ -1,0 +1,27 @@
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WindowAlerts</title>
+</head>
+<body>
+    <h1>Testes de JS</h1>
+    <!--Window Comands
+    <script>
+        //window.alert('Exibe um alerta em PopUp')
+        //window.confirm('Exibe um alerta de confirmação')
+        //window.prompt('Exibe um alerta com caixa de texto')
+        var nome = window.prompt('Qual é o seu nome? ')
+        window.alert('É um grande prazer te conhecer ' + nome + '!') //Concatenação
+    </script>
+    -->
+    <script>
+        //Toda Resposta dentro de window.prompt recebe uma String, ent pra fzr cálculos é nescessário a conversão de tipo
+        var n1 = Number(window.prompt('Digite um Número: ')) //Converte para número inteiro
+        var n2 = Number(window.prompt('Digite outro Número: ')) //Comandos CaseSensitive
+        var soma = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`) //Sob crases utilize ${}PlaceHolder para melhor exibição de variáveis
+    </script>
+</body>
+</html>

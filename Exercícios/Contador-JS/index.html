@@ -1,0 +1,47 @@
+<html lang="pt-brs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/Style.css">
+    <title>Contador-JS</title>
+</head>
+<body>
+    <header>
+        <h1>Vamos Contar</h1>
+    </header>
+    <section>
+        <div id="dados">
+            <p>Início: <input type="number" name="inicio" id="txti"></p>
+            <p>Fim: <input type="number" name="fim" id="txtf"></p>
+            <p>Intervalo: <input type="number" name="passo" id="txtp"></p>  <!--Exibição de "passo" alterada par Intervalo-->
+            
+            <div id="sepa">
+            <p>Separador: 
+                <input type="radio" name="radsep" id="nonesep" checked>
+                <label for="nonesep">None</label>
+                <input type="radio" name="radsep" id="ifsep">
+                <label for="ifsep">-</label>
+                <input type="radio" name="radsep" id="bblue">
+                <label for="bblue">&#128309;</label>
+                <input type="radio" name="radsep" id="bred">
+                <label for="bred">&#128308</label>
+
+            </p>
+            </div>
+
+            <p><input type="button" value="Contar" onclick="contar()"></p>
+        </div>
+        
+        <div id="res">
+            <p>Preparando contagem...</p>
+        </div>
+
+    </section>
+    <footer>
+        <p>&copy; Curso em Vídeo</p>
+    </footer>
+
+    <script src="assets/Scripts.js"></script>
+</body>
+</html>
